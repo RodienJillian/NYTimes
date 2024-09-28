@@ -2,7 +2,7 @@
   "name": "jillian",
   "version": "1.0.0",
   "scripts": {
-    "build": "parcel build --public url https://RodienJillian.github.io/NYTimes src/index.html",
+    "build": "parcel build --public-url https://RodienJillian.github.io/NYTimes src/index.html && rm -rf docs && mv dist docs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
