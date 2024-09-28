@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NY Times Clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="menu-icon">☰</div>
+        <div>
+            <img src="https://res.cloudinary.com/dakq2u8n0/image/upload/v1726498482/Screenshot_2024-09-16_225327-removebg-preview_pazkzu.png" class="logo" alt="NY Times Logo">
+        </div>
+        <div class="date">
+            <div id="day-of-week"></div>
+            <div id="current-date"></div>
+        </div>
+        
+        <!-- Hidden menu that appears on click -->
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="#" data-file="home">Home</a></li>
+                <li><a href="#" data-file="arts">Arts</a></li>
+                <li><a href="#" data-file="science">Science</a></li>
+                <li><a href="#" data-file="us">US</a></li>
+                <li><a href="#" data-file="world">World</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="vanta-background"></div> <!-- Vanta effect container -->
+        <div class="overlay-content">
+            <img src="https://res.cloudinary.com/dakq2u8n0/image/upload/v1726498482/Screenshot_2024-09-16_225327-removebg-preview_pazkzu.png" alt="logo" />
+            <p>Stay informed with trusted reporting from The New York Times – delivering breaking news, in-depth analysis, and global perspectives every day.</p>
+        </div>
+        <div class="section-header">
+            <h2 id="section-title">Home</h2> <!-- Placeholder text -->
+            <div class="section-line"></div>
+        </div>
+        <div id="article-container"></div>
+        
+        <!-- Articles will be dynamically inserted here -->
+    </main>
+
+    <footer>
+        <img src="https://res.cloudinary.com/dakq2u8n0/image/upload/v1726499463/poweredby_nytimes_200c-removebg-preview_tktewo.png" alt="branding">
+        <p>This site is a clone of The New York Times</p>
+        <p>for educational purposes only.</p>
+        <p>All Rights Reserved 2024 │ Ellorando, Rodien Jillian T, BSCS 3</p>
+    </footer>
+
+    <button class="scroll-to-top">
+        <img src="https://res.cloudinary.com/dakq2u8n0/image/upload/v1726846812/icon-256x256-removebg-preview_xeotyt.png" alt="Top" class="scroll-to-top-icon">
+    </button>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
